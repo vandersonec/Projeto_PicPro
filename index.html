@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./assets/css/style.css">
-
+    
     <title>PicPro</title>
 </head>
 <body>
@@ -26,7 +26,9 @@
 
     <!-- Inicio Conteudo principal-->
     <main>
+        
         <section class="secaoDetalhesConta">
+            <div class="container">
             <div class="secaoDetalhesConta_sobreUsuario">
                 <img src="./assets/img/usuario.png" alt="icone de usuario">
                 <p>Olá,<br><strong>@vanderson</strong></p>
@@ -45,7 +47,7 @@
                     <p>Pix</p>
                 </li>
                 <li class="secaoDetalhesConta_itemTransacao">
-                    <img src="./assets/img/boleto.png" alt="icone boleto">
+                    <img src="./assets/img/codigo.png" alt="icone boleto">
                     <p>Pagar Boleto</p>
                 </li>
                 <li class="secaoDetalhesConta_itemTransacao">
@@ -53,6 +55,7 @@
                     <p>cobrar</p>
                 </li>
             </ul>
+            </div>
         </section>
 
         <section class="secaoTransacao">
@@ -65,9 +68,9 @@
 
                 <div class="secaoTransacao_qrCode"><!--Div QR Code-->
                     <img src="./assets/img/qrcode-imagem.png" alt="Imagem QR Code PicPay">
-                    <p>@v anderson</p>
+                    <p><strong>@vanderson</strong></p>
                     <button>Cobre um amigo</button>
-                    <strong>Compartilhar meu código</strong>
+                    <p><a href=""> Compartilhar meu código</a></p>
                 </div>
                 
                 <div class="secaoTransacao_pix"><!--Div do Pix-->
@@ -85,7 +88,7 @@
                 <div  class="secaoTransacao_pagamentoBoleto"><!--Div do Boleto-->
                     <img src="./assets/img/boleto.png" alt="Icone de boleto">
                     <h2>Pagar com código de barras</h2>
-                    <p>Você pode parcelar em até 12X ou usar saldo da carteira para pagamento à vista.</p>
+                    <p>Você pode parcelar em até 12X ou usar seu saldo da carteira para pagamento à vista.</p>
                     <input type="text" placeholder="Insira o código de barras">
                 </div>
 
@@ -95,7 +98,7 @@
                     <p>Divida a conta com os amigos de forma fácil</p>
                     <div class="secaoTransacao_Box">
                         <img src="./assets/img/picpay-icon.png" alt="icone do PicPay">
-                        <p><strong>Amigos do PicPay</strong>
+                        <p><strong>Amigos do PicPay</strong><br>
                         Divida e acompanhe um gasto com pessoas por aqui
                         </p>
                     </div>
@@ -105,6 +108,7 @@
 
         <!-- Inicio do rodapé-->
         <footer class="rodape">
+            <div class="container">
             <ul class="rodape_menuPrincipal">
                 <li class="rodape_menuItem">
                     <a href="#">
@@ -118,7 +122,7 @@
                         <p>carteira</p>
                     </a>
                 </li>
-                <li class="rodape_menuItem">
+                <li class="rodape_menuItem menuItem_pagar">
                     <a href="#">
                         <img src="./assets/img/pagar.png" alt="icone de pagar">
                         <p>Pagar</p>
@@ -137,6 +141,7 @@
                     </a>
                 </li>
             </ul>
+            </div>
         </footer>
         <!-- Fim do rodapé-->
 

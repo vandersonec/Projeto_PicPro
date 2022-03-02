@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@100 & display=swap');
 *{
     margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 body{
    background:#4a8864;
+}
+.container{
+    width: 900px;
+    margin: 0 auto;
 }
 .cabecalho{
     padding: 20px 0;
@@ -22,12 +29,12 @@ body{
 }
 
 .secaoDetalhesConta{
-    color: white;
-    padding: 60px 0 30px;
+    color: white;   
 }
 .secaoDetalhesConta_sobreUsuario{
     display: flex;
     align-items: center;
+    padding: 30px 0;
 }
 .secaoDetalhesConta_sobreUsuario p{
     font-size: 18px;
@@ -40,7 +47,6 @@ body{
     width: 100%;
     max-width: 50px;
 }
-
 .secaoDetalhesConta_saldo{
     border-top: 1px solid rgba(0, 0, 0, 0.15);
     display: flex;
@@ -63,4 +69,161 @@ body{
     padding: 10px 60px;
     border-radius: 10px;
     cursor: pointer;
+}
+.secaoDetalhesConta_opcoesTransacoes{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 40px 0;
+}
+.secaoDetalhesConta_opcoesTransacoes li{
+    background: #1f6f54;
+    width: 170px;
+    height: 117px;
+    border-radius: 20px;
+    padding: 30px 20px;
+    cursor: pointer;
+}
+.secaoDetalhesConta_opcoesTransacoes li:hover{
+    background: #ffffff;
+    color: black;
+}
+.secaoDetalhesConta_opcoesTransacoes li img{
+    width: 100%;
+    max-width: 40px;
+}
+.secaoDetalhesConta_opcoesTransacoes p{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 25px;
+    width: 80px;
+}
+.secaoTransacao{
+    background: white;
+    border-radius: 20px 20px 0 0;
+    border-bottom: 15px solid #ebebeb;
+    padding: 30px 0;
+}
+.secaoTransacao_avisoSelecao p{
+    font-size: 25px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    padding: 30px 60px;
+    border-radius: 10px;
+    border:1px solid rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+.secaoTransacao_avisoSelecao img{
+    width: 100%;
+    margin: 30px 0 90px;
+}
+.secaoTransacao_qrCode{
+    text-align: center;
+    
+}
+.secaoTransacao_qrCode p{
+    font-size: 18px;
+    margin: 20px 0;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+.secaoTransacao_qrCode img{
+    max-width: 170px;
+}
+.secaoTransacao_qrCode button{
+    border: none;
+    background: #1f6f54;
+    color: white;
+    font-size: 18px;
+    padding: 10px 150px;
+    margin: 50px 0 0;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.secaoTransacao_qrCode p a{
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+.secaoTransacao_pix img{
+    width: 100%;
+    max-width: 150px;
+}
+.secaoTransacao_Box{
+    display: flex;
+    align-items: center;
+    border: 1px solid #d2d2d2;
+    max-width: 450px;
+    padding: 14px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    margin: 20px 0;
+}
+.secaoTransacao_Box img{
+    width: 100%;
+    max-width: 80px;
+    margin-right: 10px;
+}
+.secaoTransacao_Box p{
+    font-size: 16px;
+    line-height: 20px;
+}
+.secaoTransacao_pagamentoBoleto img, .secaoTransacao_cobrar img{
+    max-width: 80px;
+    width: 100%;
+}
+.secaoTransacao_pagamentoBoleto h2, .secaoTransacao_cobrar h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.secaoTransacao_pagamentoBoleto p, .secaoTransacao_cobrar p{
+    font-size: 18px;
+    max-width: 450px;
+    margin: 20px 0;
+}
+.secaoTransacao_pagamentoBoleto input{
+    width: 100%;
+    background: #f4f4f4;
+    font-size: 16px;
+    height: 50px;
+    padding: 0 80px;
+    border-radius: 10px;
+    border:1px solid #d2d2d2;
+    box-sizing: border-box;
+}
+.secaoTransacao_cobrar .secaoTransacao_Box img{
+    margin-right: 20px;
+}
+.rodape{
+    background: white;
+}
+.rodape_menuPrincipal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rodape_menuPrincipal li{
+    text-align: center;
+    list-style: none;
+}
+.rodape_menuPrincipal li a{
+    color: #d2d2d2;
+    text-decoration: none;
+    
+}
+.rodape_menuPrincipal li a img{
+    width: 100%;
+    max-width: 40px;
+}
+.rodape_menuPrincipal li a p{
+    margin-top: 20px;
+}
+.menuItem_pagar{
+    transform: translateY(-35px);
+}
+.rodape_menuPrincipal .menuItem_pagar img{
+    max-width: 100px;
 }
